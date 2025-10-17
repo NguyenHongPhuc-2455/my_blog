@@ -9,7 +9,7 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="text-2xl font-serif font-bold text-foreground hover:text-primary transition-colors">
+          <Link href="/pyrus_darkus_dragonoid_x_tretorous_by_themrtusky_dfbqsie.png" className="text-2xl font-serif font-bold text-foreground hover:text-primary transition-colors">
             DUCK THUNDER
           </Link>
 
