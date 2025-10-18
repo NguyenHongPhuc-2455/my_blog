@@ -126,7 +126,7 @@ export default function Home() {
         </section> */}
 
         {/* Newsletter Section */}
-        <section className="bg-primary text-primary-foreground py-16 mt-20">
+        {/* <section className="bg-primary text-primary-foreground py-16 mt-20">
           <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl font-serif font-bold mb-4 text-balance">Tham gia cùng tôi</h2>
             <p className="text-lg mb-8 opacity-90">
@@ -147,7 +147,7 @@ export default function Home() {
               </button>
             </form>
           </div>
-        </section>
+        </section> */}
       </main>
 
       <Footer />
