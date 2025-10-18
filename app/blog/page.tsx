@@ -6,7 +6,7 @@ import Link from "next/link"
 const blogPosts = [
   {
     id: 1,
-    title: "Giới thiệu Java – Ngôn ngữ lập trình hướng đối tượng phổ biến",
+    title: "Giới thiệu Java – Ngôn ngữ lập trình hướng đối tượng phổ biến" ,
     excerpt: "Tổng quan về lịch sử, đặc điểm và lý do Java được sử dụng rộng rãi trong phát triển phần mềm.",
     date: "17/10/2025",
     category: "Java",
@@ -95,10 +95,12 @@ export default function BlogPage() {
       <main className="flex-1">
         {/* Blog Header */}
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <h1 className="text-5xl md:text-6xl font-serif font-bold text-foreground mb-4 text-balance">Blog</h1>
-          <p className="text-lg text-muted-foreground max-w-2xl">
+          <div className="text-center">
+            <h1 className="text-5xl md:text-6xl font-serif font-bold text-foreground mb-4 text-balance">Blog</h1>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Lập trình Java & JavaScript.
-          </p>
+            </p>
+          </div>
         </section>
 
         {/* Blog Posts Grid */}

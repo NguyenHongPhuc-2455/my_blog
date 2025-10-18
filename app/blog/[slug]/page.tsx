@@ -1,5 +1,3 @@
-
-
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import Link from "next/link"
@@ -178,9 +176,14 @@ export default async function BlogPostPage(props: { params: Promise<{ slug: stri
       <div className="min-h-screen flex flex-col bg-background">
         <Header />
         <main className="flex-1 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <h1 className="text-4xl font-serif font-bold text-foreground mb-4">Post not found</h1>
+          <h1 
+            style={{ fontFamily: '"Times New Roman", serif' }}
+            className="text-4xl font-bold text-foreground mb-4"
+          >
+            Post not found
+          </h1>
           <Link href="/blog" className="text-primary hover:underline">
-            ← Back to Blog
+            ← Quay lại
           </Link>
         </main>
         <Footer />
@@ -217,7 +220,12 @@ export default async function BlogPostPage(props: { params: Promise<{ slug: stri
               <span className="text-sm font-semibold text-primary uppercase tracking-wide">{post.category}</span>
               <span className="text-sm text-muted-foreground">{post.date}</span>
             </div>
-            <h1 className="text-5xl font-serif font-bold text-foreground mb-4 text-balance">{post.title}</h1>
+            <h1 
+              style={{ fontFamily: '"Times New Roman", serif' }}
+              className="text-5xl font-bold text-foreground mb-4 text-balance"
+            >
+              {post.title}
+            </h1>
             <p className="text-lg text-muted-foreground">By {post.author}</p>
           </header>
 
@@ -225,10 +233,11 @@ export default async function BlogPostPage(props: { params: Promise<{ slug: stri
           <div className="prose prose-lg max-w-none text-foreground">
             <div
               className="space-y-6 text-muted-foreground leading-relaxed"
+              style={{ fontFamily: '"Times New Roman", serif' }}
               dangerouslySetInnerHTML={{
                 __html: post.content
-                  .replace(/<h2>/g, '<h2 class="text-3xl font-serif font-bold text-foreground mt-8 mb-4">')
-                  .replace(/<h3>/g, '<h3 class="text-2xl font-serif font-bold text-foreground mt-6 mb-3">')
+                  .replace(/<h2>/g, '<h2 style="font-family: &quot;Times New Roman&quot;, serif;" class="text-3xl font-bold text-foreground mt-8 mb-4">')
+                  .replace(/<h3>/g, '<h3 style="font-family: &quot;Times New Roman&quot;, serif;" class="text-2xl font-bold text-foreground mt-6 mb-3">')
                   .replace(/<p>/g, '<p class="mb-4">'),
               }}
             />
@@ -239,15 +248,20 @@ export default async function BlogPostPage(props: { params: Promise<{ slug: stri
             <div className="flex gap-4">
               <div className="w-16 h-16 rounded-full bg-muted flex-shrink-0">
                 <img
-                  src="/author-profile.png"
+                  src="/z6215793032195_fe07755bb356595bb66d3caf71c7b30e.jpg"
                   alt={post.author}
                   className="w-full h-full rounded-full object-cover"
                 />
               </div>
               <div>
-                <h3 className="font-semibold text-foreground mb-2">{post.author}</h3>
+                <h3 
+                  style={{ fontFamily: '"Times New Roman", serif' }}
+                  className="font-semibold text-foreground mb-2"
+                >
+                  {post.author}
+                </h3>
                 <p className="text-muted-foreground">
-                  A lifestyle enthusiast sharing stories, insights, and inspiration for intentional living.
+                  Chia sẽ kinh nghiệm học lập trình.
                 </p>
               </div>
             </div>
@@ -255,7 +269,12 @@ export default async function BlogPostPage(props: { params: Promise<{ slug: stri
 
           {/* Related Posts */}
           <div className="mt-16 pt-8 border-t border-border">
-            <h3 className="text-2xl font-serif font-bold text-foreground mb-8">More Posts</h3>
+            <h3 
+              style={{ fontFamily: '"Times New Roman", serif' }}
+              className="text-2xl font-bold text-foreground mb-8"
+            >
+              Các bài khác
+            </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {Object.entries(blogPostsData)
                 .filter(([relatedSlug]) => relatedSlug !== slug)

@@ -16,37 +16,57 @@ export default function Home() {
             {/* Profile Image */}
             <div className="flex justify-center">
               <div className="w-64 h-64 rounded-lg overflow-hidden bg-muted">
-                <img src="/z6215793032195_fe07755bb356595bb66d3caf71c7b30e.jpg" alt="Profile" className="w-full h-full object-cover" />
+                <img src="/avt.jpg" alt="Profile" className="w-full h-full object-cover" />
               </div>
             </div>
 
             {/* Profile Info */}
             <div className="space-y-6">
               <div>
-                <h1 className="text-5xl md:text-6xl font-serif font-bold text-foreground mb-4 text-balance">
-                  Welcome to my space
+                <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-4 text-balance" style={{ fontFamily: '"Times New Roman", serif' }}>
+                  Nguyễn Hồng Phúc
                 </h1>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  I'm a lifestyle enthusiast passionate about creating intentional spaces, sharing meaningful stories,
-                  and inspiring others to live their best lives.
+                Là sinh viên năm 4 chuyên ngành Công Nghệ Phần Mềm của trường Đại học Công Nghệ TP.Hồ Chí Minh Hutech. Tôi đam mê phát triển web và luôn nỗ lực học hỏi, rèn luyện không ngừng để trở thành một Full Stack Developer thực thụ. Tôi yêu thích việc tìm tòi, ứng dụng những công nghệ mới nhất vào thực tế, đồng thời tập trung xây dựng các ứng dụng web toàn diện — từ giao diện thân thiện, mượt mà đến hệ thống backend vững chắc — nhằm mang lại trải nghiệm người dùng tốt nhất.
                 </p>
               </div>
 
               <div className="space-y-4">
                 <div>
-                  <h3 className="font-semibold text-foreground mb-2">What I Share</h3>
+                  <h3 className="font-semibold text-foreground mb-2">Kỹ năng chuyên môn</h3>
                   <ul className="space-y-2 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span>Home tours and interior design inspiration</span>
+                      <span>Html/css</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span>Personal stories and life lessons</span>
+                      <span>Java & JavaScript</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span>Productivity tips and wellness insights</span>
+                      <span>ReactJs</span>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-foreground mb-2">Kỹ năng mềm</h3>
+                  <ul className="space-y-2 text-muted-foreground">
+                    <li className="flex items-start gap-3">
+                      <span className="text-primary mt-1">•</span>
+                      <span>Làm việc nhóm</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-primary mt-1">•</span>
+                      <span>Giao tiếp</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-primary mt-1">•</span>
+                      <span>Giải quyết các vấn đề logic</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-primary mt-1">•</span>
+                      <span>Kỹ năng quản lý thời gian</span>
                     </li>
                   </ul>
                 </div>
