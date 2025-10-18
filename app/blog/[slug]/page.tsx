@@ -201,9 +201,10 @@ export default async function BlogPostPage(props: { params: Promise<{ slug: stri
           <Link
             href="/blog"
             className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors mb-8"
+            style={{ fontFamily: '"Times New Roman", serif' }}
           >
             <ChevronLeft size={20} />
-            Back to Blog
+            Quay lại
           </Link>
         </div>
 

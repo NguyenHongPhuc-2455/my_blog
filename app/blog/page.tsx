@@ -37,7 +37,7 @@ const blogPosts = [
     excerpt: "Giới thiệu Java Collections Framework và ứng dụng trong quản lý dữ liệu.",
     date: "17/10/2025",
     category: "Java",
-    slug: "java-collections",
+    slug: "java-collections-framework",
     image: "cb88-java-logo-001.jpg"
   },
   {
@@ -82,7 +82,7 @@ const blogPosts = [
     excerpt: "Tổng quan ba cách xử lý bất đồng bộ phổ biến trong JavaScript.",
     date: "17/10/2025",
     category: "JavaScript",
-    slug: "bat-dong-bo-trong-javascript",
+    slug: "promise-async-await",
     image: "Javascript-là-gì-3.jpg"
   },
 ]

@@ -26,14 +26,14 @@ export default function Home() {
                 <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-4 text-balance" style={{ fontFamily: '"Times New Roman", serif' }}>
                   Nguyễn Hồng Phúc
                 </h1>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                Là sinh viên năm 4 chuyên ngành Công Nghệ Phần Mềm của trường Đại học Công Nghệ TP.Hồ Chí Minh Hutech. Tôi đam mê phát triển web và luôn nỗ lực học hỏi, rèn luyện không ngừng để trở thành một Full Stack Developer thực thụ. Tôi yêu thích việc tìm tòi, ứng dụng những công nghệ mới nhất vào thực tế, đồng thời tập trung xây dựng các ứng dụng web toàn diện — từ giao diện thân thiện, mượt mà đến hệ thống backend vững chắc — nhằm mang lại trải nghiệm người dùng tốt nhất.
+                <p className="text-lg text-muted-foreground leading-relaxed" style={{ textAlign: 'justify' }}>
+                  Là một sinh viên năm 4 chuyên ngành Công Nghệ Phần Mềm của trường Đại học Công Nghệ TP.Hồ Chí Minh Hutech. Tôi đam mê phát triển web và luôn nỗ lực học hỏi, rèn luyện không ngừng để trở thành một Full Stack Developer thực thụ. Tôi yêu thích việc tìm tòi, ứng dụng những công nghệ mới nhất vào thực tế, đồng thời tập trung xây dựng các ứng dụng web toàn diện — từ giao diện thân thiện, mượt mà đến hệ thống backend vững chắc — nhằm mang lại trải nghiệm người dùng tốt nhất.
                 </p>
               </div>
 
               <div className="space-y-4">
                 <div>
-                  <h3 className="font-semibold text-foreground mb-2">Kỹ năng chuyên môn</h3>
+                  <h3 className="font-semibold text-foreground mb-2">Kỹ năng chuyên môn:</h3>
                   <ul className="space-y-2 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -50,7 +50,7 @@ export default function Home() {
                   </ul>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-foreground mb-2">Kỹ năng mềm</h3>
+                  <h3 className="font-semibold text-foreground mb-2">Kỹ năng mềm:</h3>
                   <ul className="space-y-2 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
@@ -76,35 +76,35 @@ export default function Home() {
                 href="/blog"
                 className="inline-block px-8 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:opacity-90 transition-opacity"
               >
-                Blog
+                Đọc bài viết
               </Link>
             </div>
           </div>
         </section>
 
         {/* Featured Posts Section */}
-        {/* <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <h2 className="text-4xl font-serif font-bold text-foreground mb-12 text-balance">featured posts</h2>
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+          <h2 className="text-4xl font-serif font-bold text-foreground mb-12 text-balance" style={{ fontFamily: '"Times New Roman", serif' }}>Bài viết nổi bật</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
                 id: 1,
-                title: "Tour our Living Room & Lounge | Modern, Minimal, and Cozy",
-                image: "/modern-living-room.png",
-                slug: "living-room-tour",
+                title: "Giới thiệu Java – Ngôn ngữ lập trình hướng đối tượng phổ biến",
+                image: "/cb88-java-logo-001.jpg",
+                slug: "gioi-thieu-java",
               },
               {
                 id: 2,
-                title: "Full Kitchen Tour | Intentional Organization, Design Inspo, & Favorite Products",
-                image: "/kitchen-interior-design.jpg",
-                slug: "kitchen-tour",
+                title: "JavaScript là gì? Tại sao ngôn ngữ này thống trị Frontend?",
+                image: "/Javascript-là-gì-3.jpg",
+                slug: "javascript-la-gi",
               },
               {
                 id: 3,
-                title: "2025 Home Office Tour | Cozy, Productive, & Aesthetic Setup",
-                image: "/home-office-workspace.png",
-                slug: "home-office-tour",
+                title: "Event trong JavaScript – Cách tương tác với hành vi người dùng",
+                image: "/Javascript-là-gì-3.jpg",
+                slug: "promise-async-await",
               },
             ].map((post) => (
               <Link key={post.id} href={`/blog/${post.slug}`}>
@@ -123,7 +123,7 @@ export default function Home() {
               </Link>
             ))}
           </div>
-        </section> */}
+        </section>
 
         {/* Newsletter Section */}
         {/* <section className="bg-primary text-primary-foreground py-16 mt-20">
