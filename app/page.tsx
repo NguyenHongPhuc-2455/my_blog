@@ -24,7 +24,7 @@ export default function Home() {
             <div className="space-y-6">
               <div>
                 <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-4 text-balance" style={{ fontFamily: '"Times New Roman", serif' }}>
-                  Nguyễn Hồng Phúc
+                 Xin chào, tôi là Nguyễn Hồng Phúc
                 </h1>
                 <p className="text-lg text-muted-foreground leading-relaxed" style={{ textAlign: 'justify' }}>
                   Là một sinh viên năm 4 chuyên ngành Công Nghệ Phần Mềm của trường Đại học Công Nghệ TP.Hồ Chí Minh Hutech. Tôi đam mê phát triển web và luôn nỗ lực học hỏi, rèn luyện không ngừng để trở thành một Full Stack Developer thực thụ. Tôi yêu thích việc tìm tòi, ứng dụng những công nghệ mới nhất vào thực tế, đồng thời tập trung xây dựng các ứng dụng web toàn diện — từ giao diện thân thiện, mượt mà đến hệ thống backend vững chắc — nhằm mang lại trải nghiệm người dùng tốt nhất.
