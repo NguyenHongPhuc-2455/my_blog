@@ -11,15 +11,38 @@ const blogPostsData: Record<string, any> = {
     author: "Phuc Nguyen",
     image: "/cb88-java-logo-001.jpg",
     content: `
-      <h2>Java là gì và có điểm mạnh ra sao?</h2>
-      <p>Java là một ngôn ngữ lập trình bậc cao, được thiết kế để an toàn, ổn định và dễ di chuyển giữa các nền tảng. Điểm nổi bật nhất của Java là mô hình "Write Once, Run Anywhere" — tức chương trình Java biên dịch thành bytecode và chạy trên JVM (Java Virtual Machine), nhờ đó cùng một mã nguồn có thể chạy trên Windows, macOS hay Linux mà không cần sửa đổi lớn.</p>
-      <h3>Vì sao nên học Java?</h3>
-      <p>Java phù hợp cho người mới học lập trình vì cú pháp rõ ràng, tư duy OOP (hướng đối tượng) được áp dụng xuyên suốt và cộng đồng lớn. Ngoài ra, Java được dùng rộng rãi ở ứng dụng doanh nghiệp, backend, hệ thống ngân hàng và đặc biệt là phát triển ứng dụng Android truyền thống.</p>
-      <h3>Ứng dụng thực tế</h3>
-      <p>Bạn sẽ gặp Java trong các hệ thống xử lý giao dịch lớn, các dịch vụ web, ứng dụng server-side, và cả trong các công cụ học máy khi cần tính ổn định. Học Java giúp bạn nắm vững nguyên lý lập trình, quản lý bộ nhớ cơ bản và cách thiết kế phần mềm theo mô-đun.</p>
-      <h3>Tóm gọn</h3>
-      <p>Nếu mục tiêu của bạn là làm backend, hệ thống doanh nghiệp hoặc phát triển Android, Java là lựa chọn rất tốt. Bắt đầu từ những khái niệm cơ bản sẽ giúp bạn tiến lên nhanh hơn ở các chủ đề nâng cao sau này.</p>
-    `
+  <h2>Java là gì và có điểm mạnh ra sao?</h2>
+  <p>Java là một ngôn ngữ lập trình bậc cao, hướng đối tượng, được phát hành lần đầu bởi Sun Microsystems (nay thuộc Oracle) vào năm 1995. Java được thiết kế với triết lý “<strong>Write Once, Run Anywhere</strong>” (WORA), nhờ vào việc biên dịch mã nguồn thành <em>bytecode</em>, sau đó chạy trên <strong>Java Virtual Machine</strong> (JVM) — một máy ảo có sẵn trên nhiều hệ điều hành.</p>
+
+  <h3>Vì sao nên học Java?</h3>
+  <p>Java có cú pháp rõ ràng, gần gũi với C/C++ nhưng đơn giản hơn, rất phù hợp cho người mới bắt đầu. Ngoài ra:</p>
+  <ul>
+    <li>Được dùng rộng rãi trong doanh nghiệp (Spring Boot, Hibernate…)</li>
+    <li>Là nền tảng chính cho phát triển Android (trước khi Kotlin phổ biến)</li>
+    <li>Có hệ sinh thái thư viện khổng lồ và cộng đồng hỗ trợ mạnh</li>
+    <li>Hỗ trợ đa luồng (multithreading), quản lý bộ nhớ tự động (garbage collection)</li>
+  </ul>
+
+  <h3>Ví dụ "Hello World" trong Java</h3>
+  <pre><code class="language-java">public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}</code></pre>
+  <p>Chỉ cần lưu file này dưới tên <code>HelloWorld.java</code>, biên dịch bằng <code>javac HelloWorld.java</code>, rồi chạy bằng <code>java HelloWorld</code>.</p>
+
+  <h3>Ứng dụng thực tế</h3>
+  <p>Java xuất hiện trong:
+    <ul>
+      <li>Hệ thống ngân hàng (giao dịch an toàn, ổn định)</li>
+      <li>Backend của các nền tảng lớn như LinkedIn, Amazon</li>
+      <li>Các công cụ DevOps như Jenkins, Maven</li>
+    </ul>
+  </p>
+
+  <h3>Tóm gọn</h3>
+  <p>Nếu bạn muốn làm backend, hệ thống doanh nghiệp, hoặc tìm hiểu nền tảng lập trình vững chắc — Java là lựa chọn lý tưởng để bắt đầu.</p>
+`
   },
 
   "oop-trong-java": {
@@ -29,15 +52,55 @@ const blogPostsData: Record<string, any> = {
     author: "Phuc Nguyen",
     image: "/cb88-java-logo-001.jpg",
     content: `
-      <h2>Những khái niệm cơ bản của OOP</h2>
-      <p>Lập trình hướng đối tượng (OOP) là cách tổ chức chương trình bằng các đối tượng — mỗi đối tượng kết hợp dữ liệu và hành vi. Trong Java, OOP là triết lý nền tảng: tất cả đều là lớp (class) và đối tượng (object). Bốn tính chất quan trọng gồm: đóng gói (encapsulation), kế thừa (inheritance), đa hình (polymorphism), và trừu tượng (abstraction).</p>
-      <h3>Đóng gói và lợi ích</h3>
-      <p>Đóng gói giúp nhóm dữ liệu và phương thức xử lý dữ liệu vào cùng một lái, hạn chế truy cập trực tiếp từ bên ngoài và tăng tính an toàn. Điều này giúp giảm rủi ro khi sửa đổi phần bên trong mà không ảnh hưởng tới phần khác.</p>
-      <h3>Kế thừa và đa hình</h3>
-      <p>Kế thừa cho phép tái sử dụng mã bằng cách cho lớp con dùng thuộc tính và phương thức của lớp cha. Đa hình giúp cùng một phương thức được gọi khác nhau tùy loại đối tượng, giúp viết mã linh hoạt và mở rộng dễ dàng.</p>
-      <h3>Tại sao phải hiểu OOP?</h3>
-      <p>Hiểu OOP là chìa khóa để thiết kế hệ thống dễ bảo trì, dễ mở rộng. Khi bạn đọc hoặc viết mã Java cho dự án lớn, kiến thức OOP giúp bạn phân tách nhiệm vụ thành các mô-đun rõ ràng và giảm lỗi khi thay đổi yêu cầu.</p>
-    `
+  <h2>Những khái niệm cơ bản của OOP</h2>
+  <p>OOP (Object-Oriented Programming) là mô hình lập trình dựa trên “đối tượng” — kết hợp dữ liệu (thuộc tính) và hành vi (phương thức). Java là ngôn ngữ <strong>100% hướng đối tượng</strong>: mọi thứ đều nằm trong class.</p>
+
+  <h3>Bốn trụ cột của OOP</h3>
+  <ol>
+    <li><strong>Đóng gói (Encapsulation)</strong>: Ẩn thông tin bên trong, chỉ cho phép truy cập qua phương thức công khai.</li>
+    <li><strong>Kế thừa (Inheritance)</strong>: Lớp con kế thừa thuộc tính/phương thức từ lớp cha.</li>
+    <li><strong>Đa hình (Polymorphism)</strong>: Cùng một phương thức có thể hoạt động khác nhau tùy đối tượng.</li>
+    <li><strong>Trừu tượng (Abstraction)</strong>: Tập trung vào “gì” thay vì “như thế nào”.</li>
+  </ol>
+
+  <h3>Ví dụ minh họa</h3>
+  <pre><code class="language-java">// Lớp cha
+abstract class Animal {
+    abstract void makeSound();
+}
+
+// Lớp con
+class Dog extends Animal {
+    void makeSound() {
+        System.out.println("Gâu gâu!");
+    }
+}
+
+class Cat extends Animal {
+    void makeSound() {
+        System.out.println("Meo meo!");
+    }
+}
+
+// Sử dụng đa hình
+public class Main {
+    public static void main(String[] args) {
+        Animal myDog = new Dog();
+        Animal myCat = new Cat();
+        myDog.makeSound(); // Gâu gâu!
+        myCat.makeSound(); // Meo meo!
+    }
+}</code></pre>
+
+  <h3>Tại sao phải hiểu OOP?</h3>
+  <p>OOP giúp bạn:
+    <ul>
+      <li>Viết code dễ bảo trì, mở rộng</li>
+      <li>Giảm trùng lặp nhờ kế thừa và tái sử dụng</li>
+      <li>Mô phỏng thế giới thực một cách tự nhiên</li>
+    </ul>
+  </p>
+`
   },
 
   "jdk-jre-jvm": {
@@ -47,15 +110,39 @@ const blogPostsData: Record<string, any> = {
     author: "Phuc Nguyen",
     image: "/cb88-java-logo-001.jpg",
     content: `
-      <h2>Khái niệm cơ bản</h2>
-      <p>Khi làm việc với Java, bạn sẽ gặp ba thuật ngữ thường xuyên: JVM, JRE và JDK. JVM (Java Virtual Machine) là môi trường ảo chịu trách nhiệm chạy bytecode. JRE (Java Runtime Environment) bao gồm JVM và các thư viện cần thiết để chạy ứng dụng Java. JDK (Java Development Kit) là bộ công cụ dành cho lập trình viên, bao gồm JRE, trình biên dịch và các công cụ phát triển.</p>
-      <h3>Khi nào dùng JDK, khi nào dùng JRE?</h3>
-      <p>Nếu bạn chỉ cần chạy ứng dụng Java đã có sẵn trên máy, cài JRE là đủ. Nhưng nếu bạn lập trình, biên dịch hoặc đóng gói ứng dụng, bạn phải cài JDK vì nó chứa công cụ như javac (trình biên dịch) và jar (đóng gói ứng dụng).</p>
-      <h3>Tại sao cần hiểu sự khác nhau này?</h3>
-      <p>Hiểu rõ JDK/JRE/JVM giúp bạn cấu hình môi trường phát triển đúng cách, giải quyết lỗi cài đặt và biết cần cài thứ gì trên server hoặc máy phát triển. Đây là kiến thức cơ bản nhưng rất thực tế cho người bắt đầu học Java.</p>
-      <h3>Kết luận</h3>
-      <p>Nhớ: JDK để phát triển, JRE để chạy, JVM để thực thi. Nắm được điều này giúp tránh nhầm lẫn khi thiết lập dự án Java.</p>
-    `
+    <h2>Khái niệm cơ bản</h2>
+    <p>Khi làm việc với Java, bạn sẽ gặp ba thành phần cốt lõi:</p>
+    <ul>
+      <li><strong>JVM</strong> (Java Virtual Machine): Máy ảo thực thi bytecode. Đây là lý do Java “chạy mọi nơi”.</li>
+      <li><strong>JRE</strong> (Java Runtime Environment): Bao gồm JVM + thư viện chuẩn (java.lang, java.util…). Dùng để <em>chạy</em> ứng dụng Java.</li>
+      <li><strong>JDK</strong> (Java Development Kit): Bao gồm JRE + công cụ phát triển (javac, jar, jconsole…). Dùng để <em>viết và biên dịch</em> ứng dụng.</li>
+    </ul>
+  
+    <h3>So sánh trực quan</h3>
+    <pre>
+    JDK = JRE + Công cụ phát triển (javac, debugger…)
+    JRE = JVM + Thư viện Java
+    </pre>
+  
+    <h3>Ví dụ thực tế</h3>
+    <p>Giả sử bạn tải Java từ Oracle:
+      <ul>
+        <li>Nếu bạn là <strong>người dùng cuối</strong> (chỉ chạy ứng dụng): cài JRE.</li>
+        <li>Nếu bạn là <strong>lập trình viên</strong>: bắt buộc cài JDK.</li>
+      </ul>
+    </p>
+  
+    <h3>Kiểm tra phiên bản trên máy</h3>
+    <pre><code class="language-bash"># Kiểm tra JDK (nếu đã cài)
+  javac -version
+  
+  # Kiểm tra JRE/JVM
+  java -version
+  </code></pre>
+  
+    <h3>Kết luận</h3>
+    <p>Nhớ quy tắc: <strong>JDK để phát triển, JRE để chạy, JVM để thực thi</strong>. Hiểu rõ điều này giúp bạn tránh lỗi “command not found” hoặc “class not found” khi cấu hình môi trường.</p>
+  `
   },
 
   "java-collections-framework": {
@@ -65,15 +152,49 @@ const blogPostsData: Record<string, any> = {
     author: "Phuc Nguyen",
     image: "/cb88-java-logo-001.jpg",
     content: `
-      <h2>Giới thiệu Java Collections</h2>
-      <p>Collections là bộ thư viện trong Java để lưu trữ và thao tác tập hợp dữ liệu: danh sách, tập hợp và ánh xạ. Thay vì tự quản lý mảng thủ công, Collections cung cấp cấu trúc sẵn có như List, Set và Map, giúp code rõ ràng và an toàn hơn.</p>
-      <h3>List, Set và Map khác nhau thế nào?</h3>
-      <p>List lưu trữ phần tử theo thứ tự và cho phép trùng lặp (ví dụ ArrayList). Set lưu trữ phần tử không trùng lặp (ví dụ HashSet). Map lưu trữ theo cặp key-value, thuận tiện khi tra cứu theo khóa (ví dụ HashMap).</p>
-      <h3>Khi nào dùng từng loại?</h3>
-      <p>Nếu cần duy trì thứ tự và truy cập theo chỉ số, dùng List. Nếu cần loại bỏ trùng lặp, dùng Set. Nếu cần ánh xạ khóa tới giá trị, dùng Map. Lựa chọn đúng giúp chương trình chạy hiệu quả và mã dễ hiểu hơn.</p>
-      <h3>Lời khuyên thực tế</h3>
-      <p>Nắm vững Collections là bước quan trọng trước khi học cấu trúc dữ liệu nâng cao hoặc các framework như Spring. Hãy thực hành với các tác vụ phổ biến: thêm, xóa, tìm kiếm và duyệt qua tập hợp để thấy ưu/nhược điểm của từng loại.</p>
-    `
+  <h2>Giới thiệu Java Collections</h2>
+  <p>Thay vì dùng mảng tĩnh, Java cung cấp <strong>Collections Framework</strong> — bộ thư viện mạnh mẽ để lưu trữ và thao tác dữ liệu động.</p>
+
+  <h3>Ba giao diện chính</h3>
+  <table border="1" cellpadding="8">
+    <tr><th>Giao diện</th><th>Đặc điểm</th><th>Lớp triển khai phổ biến</th></tr>
+    <tr><td>List</td><td>Có thứ tự, cho phép trùng lặp</td><td>ArrayList, LinkedList</td></tr>
+    <tr><td>Set</td><td>Không trùng lặp</td><td>HashSet, TreeSet</td></tr>
+    <tr><td>Map</td><td>Lưu theo cặp key-value</td><td>HashMap, TreeMap</td></tr>
+  </table>
+
+  <h3>Ví dụ sử dụng</h3>
+  <pre><code class="language-java">import java.util.*;
+
+public class CollectionDemo {
+    public static void main(String[] args) {
+        // List
+        List<String> fruits = new ArrayList<>();
+        fruits.add("Apple");
+        fruits.add("Banana");
+        System.out.println(fruits); // [Apple, Banana]
+
+        // Set
+        Set<Integer> numbers = new HashSet<>();
+        numbers.add(10);
+        numbers.add(10); // Bị bỏ qua
+        System.out.println(numbers); // [10]
+
+        // Map
+        Map<String, Integer> ages = new HashMap<>();
+        ages.put("Phuc", 22);
+        ages.put("Lan", 21);
+        System.out.println(ages.get("Phuc")); // 22
+    }
+}</code></pre>
+
+  <h3>Lời khuyên</h3>
+  <ul>
+    <li>Dùng <code>ArrayList</code> nếu cần truy cập theo chỉ số nhanh.</li>
+    <li>Dùng <code>HashSet</code> nếu chỉ quan tâm đến sự tồn tại (không trùng).</li>
+    <li>Dùng <code>HashMap</code> để tra cứu theo khóa — hiệu suất O(1) trung bình.</li>
+  </ul>
+`
   },
 
   "exception-trong-java": {
@@ -83,15 +204,45 @@ const blogPostsData: Record<string, any> = {
     author: "Phuc Nguyen",
     image: "/cb88-java-logo-001.jpg",
     content: `
-      <h2>Exception là gì?</h2>
-      <p>Exception (ngoại lệ) là sự kiện xảy ra trong quá trình chạy chương trình khiến luồng thực thi bị gián đoạn, ví dụ lỗi chia cho 0, không tìm thấy file, hoặc lỗi kết nối mạng. Java cung cấp cơ chế để bắt và xử lý ngoại lệ nhằm giữ cho chương trình hoạt động an toàn hơn.</p>
-      <h3>Checked vs Unchecked Exception</h3>
-      <p>Java phân biệt exception có kiểm tra (checked) và không kiểm tra (unchecked). Checked exception yêu cầu xử lý hoặc khai báo throws, phù hợp cho lỗi do I/O hay mạng. Unchecked exception (ví dụ NullPointerException) phát sinh do lỗi logic và không bắt buộc khai báo.</p>
-      <h3>Nguyên tắc xử lý lỗi</h3>
-      <p>Sử dụng try-catch để bắt lỗi tại nơi có thể xử lý hợp lý; dùng finally để giải phóng tài nguyên. Tránh bắt quá chung chung (catch Exception) nếu bạn không xử lý được từng loại, vì điều đó che khuất lỗi thực sự.</p>
-      <h3>Kết luận</h3>
-      <p>Xử lý ngoại lệ đúng cách làm tăng độ ổn định và khả năng gỡ lỗi cho ứng dụng. Học cách phân loại exception và biết khi nào nên ném tiếp (rethrow) hay xử lý ngay là kỹ năng quan trọng của lập trình viên Java.</p>
-    `
+  <h2>Exception là gì?</h2>
+  <p>Exception là sự kiện bất thường làm gián đoạn luồng chương trình, ví dụ: chia cho 0, file không tồn tại, mạng lỗi… Java phân loại exception thành hai nhóm:</p>
+
+  <h3>1. Checked Exception</h3>
+  <p>Bắt buộc phải xử lý hoặc khai báo <code>throws</code>. Ví dụ: <code>IOException</code>, <code>SQLException</code>.</p>
+
+  <h3>2. Unchecked Exception</h3>
+  <p>Không bắt buộc xử lý, thường do lỗi logic: <code>NullPointerException</code>, <code>ArrayIndexOutOfBoundsException</code>.</p>
+
+  <h3>Ví dụ xử lý exception</h3>
+  <pre><code class="language-java">import java.io.*;
+
+public class FileRead {
+    public static void main(String[] args) {
+        try {
+            FileReader file = new FileReader("data.txt");
+            BufferedReader reader = new BufferedReader(file);
+            System.out.println(reader.readLine());
+            reader.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("File không tồn tại!");
+        } catch (IOException e) {
+            System.out.println("Lỗi khi đọc file!");
+        } finally {
+            System.out.println("Hoàn tất thao tác.");
+        }
+    }
+}</code></pre>
+
+  <h3>Best practices</h3>
+  <ul>
+    <li>Không bắt <code>catch (Exception e)</code> chung chung.</li>
+    <li>Log lỗi thay vì chỉ in ra console.</li>
+    <li>Dọn dẹp tài nguyên trong <code>finally</code> hoặc dùng <em>try-with-resources</em>.</li>
+  </ul>
+
+  <h3>Kết luận</h3>
+  <p>Xử lý exception đúng cách giúp ứng dụng không crash và dễ debug. Đây là kỹ năng bắt buộc cho lập trình viên Java chuyên nghiệp.</p>
+`
   },
 
   "javascript-la-gi": {
@@ -101,15 +252,36 @@ const blogPostsData: Record<string, any> = {
     author: "Phuc Nguyen",
     image: "/Javascript-là-gì-3.jpg",
     content: `
-      <h2>Khái niệm cơ bản về JavaScript</h2>
-      <p>JavaScript là ngôn ngữ kịch bản chủ yếu chạy trên trình duyệt, dùng để làm cho trang web tương tác: thay đổi nội dung, phản hồi sự kiện người dùng, và kết nối với server qua API. Ngôn ngữ này đã phát triển mạnh và giờ đây còn chạy trên server (Node.js) và nhiều nền tảng khác.</p>
-      <h3>Tại sao JavaScript quan trọng?</h3>
-      <p>Vì trình duyệt chỉ hiểu HTML, CSS và JavaScript để làm web động, nên bất kỳ ai muốn làm frontend đều phải biết JS. Ngoài ra, hệ sinh thái khổng lồ (framework như React, Vue, Angular) giúp phát triển giao diện nhanh và dễ bảo trì.</p>
-      <h3>Ứng dụng ngoài trình duyệt</h3>
-      <p>Nhờ Node.js, JavaScript có thể chạy trên server, làm scripting, xây dựng công cụ phát triển, hoặc phát triển ứng dụng di động với các framework đa nền tảng. Điều này khiến JS trở thành ngôn ngữ linh hoạt cho nhiều mục đích.</p>
-      <h3>Kết luận</h3>
-      <p>Nếu bạn hướng đến web, bắt đầu với JavaScript là bước thiết yếu. Sau khi nắm vững nền tảng, bạn có thể chọn sâu vào frontend hoặc mở rộng sang backend với Node.js.</p>
-    `
+  <h2>Khái niệm cơ bản về JavaScript</h2>
+  <p>JavaScript (JS) là ngôn ngữ lập trình <strong>client-side</strong> chạy trực tiếp trên trình duyệt, dùng để tạo tương tác động cho trang web: thay đổi nội dung, phản hồi click, gửi dữ liệu không cần tải lại trang.</p>
+
+  <h3>Tại sao JavaScript thống trị web?</h3>
+  <ul>
+    <li>Là ngôn ngữ <strong>duy nhất</strong> trình duyệt hiểu (bên cạnh HTML/CSS)</li>
+    <li>Hệ sinh thái khổng lồ: React, Vue, Angular, Node.js, Express, Next.js…</li>
+    <li>Hỗ trợ lập trình hàm, hướng đối tượng, bất đồng bộ</li>
+    <li>Có thể dùng cả frontend lẫn backend (Node.js)</li>
+  </ul>
+
+  <h3>Ví dụ đơn giản</h3>
+  <pre><code class="language-html"><button onclick="alert('Xin chào!')">Click tôi</button></code></pre>
+
+  <p>Hoặc dùng JS thuần:</p>
+  <pre><code class="language-javascript">document.querySelector('button').addEventListener('click', () => {
+  console.log('Bạn đã click!');
+});</code></pre>
+
+  <h3>Ứng dụng thực tế</h3>
+  <ul>
+    <li>Frontend: React, Vue để xây dựng giao diện phức tạp</li>
+    <li>Backend: Node.js + Express để làm API</li>
+    <li>Mobile: React Native</li>
+    <li>Desktop: Electron (VS Code, Discord)</li>
+  </ul>
+
+  <h3>Kết luận</h3>
+  <p>Nếu bạn muốn làm web — dù frontend, backend hay full-stack — JavaScript là ngôn ngữ <strong>không thể bỏ qua</strong>.</p>
+`
   },
 
   "dom-trong-javascript": {
@@ -119,15 +291,46 @@ const blogPostsData: Record<string, any> = {
     author: "Phuc Nguyen",
     image: "/Javascript-là-gì-3.jpg",
     content: `
-      <h2>DOM là gì và vì sao nó quan trọng?</h2>
-      <p>DOM (Document Object Model) là mô hình đối tượng biểu diễn cấu trúc HTML của trang web. Mỗi phần tử HTML được coi là một nút (node) trong cây DOM, và JavaScript có thể truy cập, thay đổi hoặc xóa các nút này để làm thay đổi giao diện người dùng động.</p>
-      <h3>Ví dụ về ứng dụng DOM</h3>
-      <p>Bạn có thể dùng DOM để cập nhật nội dung khi người dùng nhập, thêm hoặc xóa phần tử, thay đổi kiểu dáng, hoặc điều khiển hiển thị popup. Hiểu cấu trúc DOM giúp bạn xử lý sự kiện và tối ưu thao tác DOM (giảm reflow/repaint) để trang chạy mượt hơn.</p>
-      <h3>Lưu ý khi thao tác DOM</h3>
-      <p>Tránh thao tác DOM quá nhiều lần liên tiếp; thay vào đó, gom các thay đổi hoặc dùng fragment để chèn nhiều phần tử cùng lúc. Ngoài ra, cân nhắc sử dụng framework (React, Vue) nếu ứng dụng phức tạp để quản lý trạng thái và cập nhật DOM hiệu quả hơn.</p>
-      <h3>Kết luận</h3>
-      <p>DOM là nền tảng của mọi tương tác frontend. Nắm vững cách truy cập, thay đổi và tối ưu DOM là kỹ năng cơ bản cần có cho lập trình viên web.</p>
-    `
+  <h2>DOM là gì?</h2>
+  <p>Khi trình duyệt tải HTML, nó tạo ra một cây đối tượng gọi là <strong>Document Object Model</strong> (DOM). Mỗi thẻ HTML là một <em>node</em> trong cây này. JavaScript có thể truy cập và thay đổi DOM để làm giao diện “sống động”.</p>
+
+  <h3>Truy cập phần tử DOM</h3>
+  <pre><code class="language-javascript">// Lấy phần tử theo ID
+const title = document.getElementById('main-title');
+
+// Lấy theo class
+const buttons = document.getElementsByClassName('btn');
+
+// Lấy theo selector CSS (phổ biến nhất)
+const header = document.querySelector('header');
+const allLinks = document.querySelectorAll('a');</code></pre>
+
+  <h3>Thay đổi nội dung và thuộc tính</h3>
+  <pre><code class="language-javascript">const p = document.querySelector('p');
+p.textContent = 'Nội dung mới!'; // Thay văn bản
+p.innerHTML = '<strong>In đậm!</strong>'; // Thay HTML
+
+// Thay đổi thuộc tính
+const img = document.querySelector('img');
+img.src = '/new-image.jpg';
+img.alt = 'Ảnh mới';</code></pre>
+
+  <h3>Tạo và thêm phần tử mới</h3>
+  <pre><code class="language-javascript">const newDiv = document.createElement('div');
+newDiv.textContent = 'Tôi là phần tử mới!';
+document.body.appendChild(newDiv);</code></pre>
+
+  <h3>Lưu ý hiệu năng</h3>
+  <p>Thao tác DOM tốn kém. Tránh:
+    <ul>
+      <li>Truy cập DOM trong vòng lặp</li>
+      <li>Thay đổi style từng thuộc tính (dùng class CSS thay vì <code>element.style.color = ...</code>)</li>
+    </ul>
+  </p>
+
+  <h3>Kết luận</h3>
+  <p>DOM là cầu nối giữa HTML và JavaScript. Hiểu DOM giúp bạn xây dựng giao diện tương tác mượt mà và hiệu quả.</p>
+`
   },
 
   "event-trong-javascript": {
@@ -137,15 +340,41 @@ const blogPostsData: Record<string, any> = {
     author: "Phuc Nguyen",
     image: "/Javascript-là-gì-3.jpg",
     content: `
-      <h2>Sự kiện (Event) là gì?</h2>
-      <p>Sự kiện là hành động xảy ra trên trang web như click, nhập liệu, di chuyển chuột hoặc gửi form. JavaScript lắng nghe các sự kiện này và thực hiện hàm xử lý (handler) tương ứng, giúp ứng dụng phản hồi và tương tác với người dùng.</p>
-      <h3>Cách lắng nghe sự kiện</h3>
-      <p>Thông thường ta dùng phương thức để đăng ký hàm xử lý lên phần tử cần quan tâm. Việc đặt event listener đúng chỗ và dọn dẹp khi không cần thiết giúp tránh rò rỉ bộ nhớ và lỗi không mong muốn.</p>
-      <h3>Quản lý sự kiện phức tạp</h3>
-      <p>Khi ứng dụng lớn, quản lý nhiều listener có thể phức tạp. Kỹ thuật delegation (ủy quyền sự kiện) hữu ích — gắn listener lên phần tử cha để xử lý các event từ phần tử con, giảm số lượng listener cần thiết.</p>
-      <h3>Kết luận</h3>
-      <p>Hiểu cơ chế event và cách quản lý listener là nền tảng để xây dựng giao diện tương tác, mượt mà và dễ bảo trì. Đây là kỹ năng thiết yếu cho mọi lập trình viên frontend.</p>
-    `
+  <h2>Sự kiện (Event) là gì?</h2>
+  <p>Event là hành động xảy ra trên trang web: click, nhập liệu, di chuột, submit form… JavaScript có thể “lắng nghe” và phản hồi các sự kiện này.</p>
+
+  <h3>Đăng ký sự kiện</h3>
+  <pre><code class="language-javascript">const button = document.querySelector('#myBtn');
+
+// Cách 1: addEventListener (khuyến khích)
+button.addEventListener('click', function() {
+  alert('Đã click!');
+});
+
+// Cách 2: gán trực tiếp (ít dùng)
+button.onclick = function() { ... };</code></pre>
+
+  <h3>Ví dụ: Form validation</h3>
+  <pre><code class="language-javascript">const form = document.querySelector('form');
+form.addEventListener('submit', function(e) {
+  const email = document.querySelector('#email').value;
+  if (!email.includes('@')) {
+    e.preventDefault(); // Ngăn gửi form
+    alert('Email không hợp lệ!');
+  }
+});</code></pre>
+
+  <h3>Event delegation (ủy quyền sự kiện)</h3>
+  <p>Khi có nhiều phần tử con (ví dụ danh sách), thay vì gắn listener cho từng cái, hãy gắn vào phần tử cha:</p>
+  <pre><code class="language-javascript">document.querySelector('#todo-list').addEventListener('click', function(e) {
+  if (e.target.tagName === 'BUTTON') {
+    e.target.parentElement.remove(); // Xóa todo item
+  }
+});</code></pre>
+
+  <h3>Kết luận</h3>
+  <p>Sự kiện là trái tim của trải nghiệm người dùng trên web. Biết cách lắng nghe, xử lý và ủy quyền sự kiện giúp bạn xây dựng ứng dụng tương tác mạnh mẽ và hiệu quả.</p>
+`
   },
 
   "promise-async-await": {
@@ -155,15 +384,56 @@ const blogPostsData: Record<string, any> = {
     author: "Phuc Nguyen",
     image: "/Javascript-là-gì-3.jpg",
     content: `
-      <h2>Tại sao cần xử lý bất đồng bộ?</h2>
-      <p>Nhiều tác vụ trong web như gọi API, đọc file hoặc chờ phản hồi người dùng là bất đồng bộ — không thể chặn toàn bộ chương trình. JavaScript cung cấp nhiều cách để xử lý: callback truyền thống, Promise, và cú pháp async/await.</p>
-      <h3>Callback và vấn đề</h3>
-      <p>Callback là cách đầu tiên để xử lý bất đồng bộ nhưng dễ dẫn đến "callback hell" khi có nhiều bước liên tiếp, khiến mã khó đọc và khó bảo trì.</p>
-      <h3>Promise và async/await</h3>
-      <p>Promise cải thiện luồng bằng cách đại diện cho một giá trị có thể có trong tương lai, cho phép chuỗi xử lý rõ ràng hơn. Async/await là cú pháp cao hơn, giúp viết mã bất đồng bộ trông như đồng bộ, dễ đọc và dễ bắt lỗi.</p>
-      <h3>Kết luận</h3>
-      <p>Hiểu từng cách tiếp cận và biết khi nào dùng Promise hay async/await sẽ giúp bạn viết code rõ ràng, dễ debug và phù hợp với ứng dụng thực tế.</p>
-    `
+  <h2>Tại sao cần xử lý bất đồng bộ?</h2>
+  <p>Nhiều tác vụ như gọi API, đọc file, hoặc chờ người dùng không thể “chặn” luồng chính. JavaScript xử lý chúng bằng cơ chế <strong>bất đồng bộ</strong> (asynchronous).</p>
+
+  <h3>1. Callback (cũ, dễ rối)</h3>
+  <pre><code class="language-javascript">function fetchData(callback) {
+  setTimeout(() => {
+    callback('Dữ liệu từ server');
+  }, 1000);
+}
+
+fetchData((data) => {
+  console.log(data);
+});</code></pre>
+
+  <h3>2. Promise (rõ ràng hơn)</h3>
+  <pre><code class="language-javascript">function fetchData() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve('Dữ liệu từ server');
+    }, 1000);
+  });
+}
+
+fetchData()
+  .then(data => console.log(data))
+  .catch(err => console.error(err));</code></pre>
+
+  <h3>3. Async/Await (hiện đại, dễ đọc)</h3>
+  <pre><code class="language-javascript">async function loadUserData() {
+  try {
+    const response = await fetch('https://api.example.com/user');
+    const user = await response.json();
+    console.log(user);
+  } catch (error) {
+    console.error('Lỗi:', error);
+  }
+}
+
+loadUserData();</code></pre>
+
+  <h3>So sánh</h3>
+  <ul>
+    <li><strong>Callback</strong>: dễ dẫn đến “callback hell” khi lồng nhiều lớp.</li>
+    <li><strong>Promise</strong>: hỗ trợ chaining, dễ xử lý lỗi hơn.</li>
+    <li><strong>Async/Await</strong>: viết như code đồng bộ, dễ debug, hỗ trợ try/catch.</li>
+  </ul>
+
+  <h3>Kết luận</h3>
+  <p>Trong dự án hiện đại, hãy ưu tiên dùng <code>async/await</code>. Nhưng vẫn cần hiểu Promise vì nhiều thư viện vẫn trả về Promise.</p>
+`
   }
 };
 
