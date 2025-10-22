@@ -40,12 +40,12 @@ export function Header() {
             <a href="https://www.youtube.com" className="text-primary-foreground hover:opacity-80 transition-opacity">
               <Youtube size={20} />
             </a>
-            {/* <a href="#" className="text-primary-foreground hover:opacity-80 transition-opacity">
+            <a href="#" className="text-primary-foreground hover:opacity-80 transition-opacity">
               <Linkedin size={20} />
             </a>
             <a href="#" className="text-primary-foreground hover:opacity-80 transition-opacity">
               <LinkIcon size={20} />
-            </a> */}
+            </a>
           </div>
         </div>
       </div>
