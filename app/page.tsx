@@ -37,15 +37,15 @@ export default function Home() {
                   <ul className="space-y-2 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span>Html/css</span>
+                      <span>Frontend</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span>Java & JavaScript</span>
+                      <span>Backend</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span>ReactJs</span>
+                      <span>Cơ sở dữ liệu</span>
                     </li>
                   </ul>
                 </div>
@@ -54,19 +54,19 @@ export default function Home() {
                   <ul className="space-y-2 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span>Làm việc nhóm</span>
+                      <span>Làm việc nhóm, giao tiếp kỹ thuật</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span>Giao tiếp</span>
+                      <span>Viết tài liệu, đọc hiểu requirement</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span>Giải quyết các vấn đề logic</span>
+                      <span>Tư duy giải quyết vấn đề</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary mt-1">•</span>
-                      <span>Kỹ năng quản lý thời gian</span>
+                      <span>Khả năng tự học công nghệ mới</span>
                     </li>
                   </ul>
                 </div>
